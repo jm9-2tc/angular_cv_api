@@ -1,12 +1,18 @@
-import { Controller, Get } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { AppService } from './app.service';
+import { MessageDTO } from './model/message.dto';
 
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  getCvData(): string {
+    return this.appService.getCvData();
+  }
+
+  @Post('/send-message')
+  sendMessage(@Body() message: MessageDTO): void {
+    this.appService.sendMessage(message);
   }
 }

@@ -1,6 +1,10 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
+
 import * as request from 'supertest';
+import * as fs from 'fs';
+import path from 'path';
+
 import { AppModule } from './../src/app.module';
 
 describe('AppController (e2e)', () => {
@@ -19,6 +23,6 @@ describe('AppController (e2e)', () => {
     return request(app.getHttpServer())
       .get('/')
       .expect(200)
-      .expect('Hello World!');
+      .expect(fs.readFileSync(path.join(__dirname, '../test/assets/test-cv-data.json')));
   });
 });
