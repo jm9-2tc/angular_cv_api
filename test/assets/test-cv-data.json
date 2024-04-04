@@ -1,24 +1,64 @@
 {
     "aboutMe": {
-        "name": "John Doe",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        "name": "Jan Marmucki",
+        "description": {
+            "$translate": {
+                "en": "My name is Jan Marmucki. I'm an ambitious student of programming class, ready for new projects and new challenges. My journey in programming started nearly 10 years ago and since then I enjoy learning new programming languages and technologies or broading my knowledge in teh areas I'm already familiar with. Except for programming my hobbies are: gamedev, computer graphics, electronics and model making.",
+                "pl": "Nazywam się Jan Marmucki. Jestem ambitnym uczniem klasy programistycznej, gotowym na nowe projekty i wyzwania. Przygode z programowaniem rozpocząłem prawie 10 lat temu i od tego czasu z przyjemnością uczę się nowych języków programowania i technologii oraz poszerzam swoją wiedzę w obszarach, które już znam. Poza programowaniem, moje zainteresowania to: grafika komputerowa, elektronika i modelarstwo."
+            }
+        }
     },
     "experience": [
         {
             "imagePath": "kubernetes.svg",
             "title": "Kubernetes",
-            "knowledgeLevel": 70
+            "knowledgeLevel": 80
+        },
+        {
+            "imagePath": "linux.svg",
+            "title": "Linux",
+            "knowledgeLevel": 40
+        },
+        {
+            "imagePath": "azure.svg",
+            "title": "Azure",
+            "knowledgeLevel": 40
+        },
+        {
+            "imagePath": "aws.svg",
+            "title": "AWS",
+            "knowledgeLevel": 30
+        },
+        {
+            "imagePath": "angular.svg",
+            "title": "Angular",
+            "knowledgeLevel": 30
+        },
+        {
+            "imagePath": "react.svg",
+            "title": "React",
+            "knowledgeLevel": 50
+        },
+        {
+            "imagePath": "spring.svg",
+            "title": "Spring",
+            "knowledgeLevel": 40
         }
     ],
     "education": [
         {
             "institutionName": {
                 "$translate": {
-                    "en": "Technical School no. 1",
-                    "pl": "Technikum Mechatroniczne nr 1"
+                    "en": "Technical School no. 1 in Warsaw",
+                    "pl": "Technikum Mechatroniczne nr 1 w Warszawie"
                 }
             },
-            "description": "programming class",
+            "description": {
+                "$translate": {
+                    "en": "programming class",
+                    "pl": "klasa technik programista"
+                }
+            },
             "years": {
                 "from": 2020,
                 "to": 2025
@@ -30,6 +70,58 @@
             "title": "Azure fundamentals",
             "iconPath": "azure-fundamentals.svg",
             "link": "https://dev.azure.com"
+        }
+    ],
+    "projects": [
+        {
+            "imagePath": "placeholder.svg",
+            "name": {
+                "$translate": {
+                    "en": "Microservice backend for self checkout",
+                    "pl": "Mikroserwisowy backend dla kasy samoobsługowej"
+                }
+            },
+            "description": {
+                "$translate": {
+                    "en": "A backendel for self checkout splitted up into 3 mikroserwisy. Written in Spring in Java.",
+                    "pl": "Backend do kasy samoobsługowej podzielony na 3 mikroserwisy. Napisany we frameworku Spring w Javie."
+                }
+            },
+            "involvedTechnologies": [ "Java", "Spring", "JUnit", "Testcontainers" ],
+            "links": {
+                "github": "",
+                "ado": ""
+            }
+        },
+        {
+            "imagePath": "placeholder.svg",
+            "name": "PlacekScript",
+            "description": {
+                "$translate": {
+                    "en": "A parser and an interpreter for my own programming language.",
+                    "pl": "Parser i interpreter własnego języka programowania."
+                }
+            },
+            "involvedTechnologies": [ "Java" ],
+            "links": {
+                "github": "",
+                "ado": ""
+            }
+        },
+        {
+            "imagePath": "placeholder.svg",
+            "name": "Voting App",
+            "description": {
+                "$translate": {
+                    "en": "A group project of a voting app.",
+                    "pl": "Projekt grupowy aplikacji do głosowania."
+                }
+            },
+            "involvedTechnologies": [ "NodeJS", "NextJS", "TypeScript", "Svelte" ],
+            "links": {
+                "github": "",
+                "ado": ""
+            }
         }
     ],
     "contactInfo": {
