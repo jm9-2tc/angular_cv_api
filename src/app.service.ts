@@ -10,6 +10,6 @@ export class AppService {
   }
 
   sendMessage(message: MessageDTO): void {
-    
+    console.log(`RECEIVED NEW MESSAGE (title: ${message.title}, author: ${message.author})`)
   }
 }
